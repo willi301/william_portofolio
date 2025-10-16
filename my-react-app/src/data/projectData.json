@@ -1,0 +1,44 @@
+[
+  {
+    "image": "/image/chillmatecover.jpg",
+    "title": "Chillmate",
+    "description": "A web app to help student's mental health",
+    "link": "https://github.com/willi301/Chillmate-project",
+    "tech": ["React", "Python", "MongoDB", "Django", "FastAPI"]
+  },
+  {
+    "image": "/image/bitsbazaar.jpg",
+    "title": "BitsBazaar",
+    "description": "E-commerce website for buying and selling tech gadgets",
+    "link": "https://github.com/willi301/BitsBazaar",
+    "tech": ["React", "JavaScript", "MongoDB", "Next.js"]
+  },
+ {
+    "image": "/image/nextgen.jpg",
+    "title": "NextGen app",
+    "description": "Conference management app for organizing and managing events",
+    "link": "https://www.ifgfnextgen.com/serve",
+    "tech": ["React", "TypeScript", "MongoDB", "Node.js", "Express"]
+  },
+  {
+    "image": "/image/deepify.jpg",
+    "title": "Deepify",
+    "description": "AI-powered student learning dashboard based on syllabus",
+    "link": "https://devpost.com/software/deep-learner",
+    "tech": ["React", "Next.js", "FastAPI", "Tailwind CSS", "Google Gemini", "MongoDB"]
+  },
+  {
+    "image": "/image/lifequest.jpg",
+    "title": "lifequest",
+    "description": "gamified to do list mobile app to boost productivity",
+    "link": "https://github.com/willi301/LifeQuest",
+    "tech": ["React native"]
+  },
+  {
+    "image": "/image/databaseEER.png",
+    "title": "Airport Database",
+    "description": "Database design for airport",
+    "link": "https://github.com/willi301/csc675-775-fa24-willi301",
+    "tech": ["SQL", "Database design"]
+  }
+]
