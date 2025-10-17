@@ -1,7 +1,7 @@
 import React from "react";
 import "./components.css"; // optional if you have specific styles for the navbar
 import SocialMedia from "./socialMedia";
-import Resume from '../assets/William_Widjaja_Resume.pdf';
+import Resume from '../assets/Software_Engineer_Resume (2).pdf';
 import pic from "../../public/image/profilepic.jpg"
 import Project from "../pages/project.tsx";
 
