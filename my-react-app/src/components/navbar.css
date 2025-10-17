@@ -1,7 +1,6 @@
 .navbar {
-    width: 100%;
+    width: 100vw;
     height: 10%;
-    /* background-color: rgb(122, 172, 155); */
     margin: 0%;
     padding: 0%;
     left: 0%;
@@ -21,4 +20,5 @@
     margin: 1rem;
     font-size: 1.2rem;
     line-height: 1.6;
+    margin-right: 2%;
 }

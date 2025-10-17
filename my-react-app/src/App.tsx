@@ -1,8 +1,8 @@
 // src/App.tsx
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Home from "./pages/home.tsx";
-import Projects from "./pages/project.tsx";
+import ProjectsPage from "./pages/projectPage.tsx";
 import Contact from "./pages/contact.tsx";
 
 const App: React.FC = () => {
@@ -11,7 +11,7 @@ const App: React.FC = () => {
       {/* Define Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>

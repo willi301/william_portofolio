@@ -1,34 +1,56 @@
+/* Home */
+ .home {
+  width: 100vw;
+
+ }
+
+html, body {
+  overflow-x: hidden;
+}
+
+
 /* AboutMe.tsx */
 .about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    padding-top: 7%;
-    margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap;           */
+  padding: 20px;
+  width: 100vw;
+  padding-top: 7%;
+  margin-bottom: 10%;
+  box-sizing: border-box;      /* ✅ include padding in total width */
+  overflow-x: hidden;          /* ✅ contain any child overflow */
 }
 
 .about-container {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-top: 3%;
-    justify-content: space-evenly;
-}
-
-.profilepic {
-    width: 200px;
-    height: 200px;
+  display: flex;
+  flex-direction: column;
+  /* min-width: 300px;
+  max-width: 700px; */
+  margin-top: 3%;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 50%;
 }
 
 .profilepic-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;          /* Set fixed frame width */
+  height: 500px;         /* Set fixed frame height */
+  overflow: hidden;      /* ✅ hides overflow so image stays within frame */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional aesthetic */
 }
+
+
+.profilepic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* ✅ fill the frame, crop overflow */
+}
+
 
 .nama {
     font-size: 5rem;
@@ -49,8 +71,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100vw;
     flex-direction: column;
 }
 
@@ -115,7 +138,8 @@
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 5px;
-  width: 15%;
+  width: 20%;
+  height: 44px;
 }
 
 .my-button:hover {
@@ -224,7 +248,6 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
     width: 100%;
     margin-bottom: 5%;
 }
@@ -247,11 +270,10 @@
     margin-top: 5px;
 }
 
-/*project.tsx*/
+/* project.tsx */
 .projects-section {
     min-height: 100vh;
     background-color: #f9fafb;
-    /* padding: 2.5rem 1.25rem; */
 }
 
 .projects-container {
@@ -271,26 +293,62 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 per row on mobile */
     gap: 2rem;
-    padding: 10rem; /* Add padding to container */
+    padding: 2rem;
 }
 
 @media (min-width: 768px) {
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
         gap: 3rem;
-        padding: 2rem; /* More padding on desktop */
     }
 }
 
-/* For larger screens */
 @media (min-width: 1024px) {
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+        grid-template-columns: repeat(3, 1fr); /* ✅ 3 per row on desktop */
+        gap: 3rem;
     }
 }
+
+.projects-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.active-filter span {
+    background-color: #4f46e5;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+.clear-filter-btn {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    color: #374151;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.clear-filter-btn:hover {
+    background-color: #e5e7eb;
+}
+
+.no-results-text {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+}
+
 
 /* projectCard.tsx */
 .project-card {
@@ -365,4 +423,126 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ===============================
+   RESPONSIVE ADJUSTMENTS
+================================*/
+
+
+
+@media (max-width: 1180px) {
+  .my-button {
+    width: 25%;
+    height: 44px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .about-container,
+  .lets-connect-container {
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .profilepic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;          /* Set fixed frame width */
+    height: 500px;         /* Set fixed frame height */
+    overflow: hidden;      /* ✅ hides overflow so image stays within frame */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional aesthetic */
+    margin-top: 7%;
+  }
+  }
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .summary-text{
+    width: 90%;
+  }
+
+  .projects-container {
+    max-width: 95%;
+  }
+
+  .lets-connect {
+    flex-direction: column;
+  }
+
+  .nama {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .about-p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+      margin-bottom: 5px;
+  }
+
+
+  .lets-connect-title {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+}
+
+@media (max-width: 480px) {
+
+
+  .my-button {
+    width: 60%;
+    text-align: center;
+  }
+
+  .projects-grid {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .nama {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .about-p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+      margin-bottom: 5px;
+  }
+
+  .summary-p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+    margin-top: 5px;
+    
+}
+
+  .summary-text {
+      width: 80%;
+      font-size: 1rem;
+      line-height: 1.6;
+  }
 }

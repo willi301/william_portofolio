@@ -1,6 +1,4 @@
-import { useState } from "react";
 import React from "react";
-import { Link } from "react-router-dom";
 import "./components.css"; // optional if you have specific styles for the navbar
 import ProjectCard from "./projectCard";
 import chillmateImg from '../assets/chillmatecover.jpg';

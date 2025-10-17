@@ -1,8 +1,11 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
+  max-width: 100vw;   /* ✅ prevents layout from exceeding viewport width */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;         /* ✅ remove padding that caused overflow */
   text-align: center;
+  box-sizing: border-box;
+  overflow-x: hidden; /* ✅ ensure no horizontal scroll */
 }
 
 .logo {

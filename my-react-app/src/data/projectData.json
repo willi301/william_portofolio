@@ -4,6 +4,7 @@
     "title": "Chillmate",
     "description": "A web app to help student's mental health",
     "link": "https://github.com/willi301/Chillmate-project",
+    "category": "Website development",
     "tech": ["React", "Python", "MongoDB", "Django", "FastAPI"]
   },
   {
@@ -11,6 +12,7 @@
     "title": "BitsBazaar",
     "description": "E-commerce website for buying and selling tech gadgets",
     "link": "https://github.com/willi301/BitsBazaar",
+    "category": "Website development",
     "tech": ["React", "JavaScript", "MongoDB", "Next.js"]
   },
  {
@@ -18,13 +20,15 @@
     "title": "NextGen app",
     "description": "Conference management app for organizing and managing events",
     "link": "https://www.ifgfnextgen.com/serve",
-    "tech": ["React", "TypeScript", "MongoDB", "Node.js", "Express"]
+    "category": "Website development",
+    "tech": ["React", "TypeScript", "Firebase", "Node.js", "Express"]
   },
   {
     "image": "/image/deepify.jpg",
     "title": "Deepify",
     "description": "AI-powered student learning dashboard based on syllabus",
     "link": "https://devpost.com/software/deep-learner",
+    "category": "Website development",
     "tech": ["React", "Next.js", "FastAPI", "Tailwind CSS", "Google Gemini", "MongoDB"]
   },
   {
@@ -32,6 +36,7 @@
     "title": "lifequest",
     "description": "gamified to do list mobile app to boost productivity",
     "link": "https://github.com/willi301/LifeQuest",
+    "category": "Mobile development",
     "tech": ["React native"]
   },
   {
@@ -39,6 +44,7 @@
     "title": "Airport Database",
     "description": "Database design for airport",
     "link": "https://github.com/willi301/csc675-775-fa24-willi301",
+    "category": "Database design",
     "tech": ["SQL", "Database design"]
   }
 ]

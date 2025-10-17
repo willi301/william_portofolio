@@ -1,7 +1,6 @@
 import React from "react";
 import "./components.css"; // optional if you have specific styles for the navbar
 import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
-import { SiCodepen } from "react-icons/si";
 
 const SocialMedia: React.FC = () => {
 
