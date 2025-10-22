@@ -37,8 +37,10 @@ const AboutMe: React.FC = () => {
                 </div>
 
                 {/* <SampleProject /> */}
-
-                <Project />
+                <div id="project">
+                    <Project />
+                </div>
+                
         </>
          
   );

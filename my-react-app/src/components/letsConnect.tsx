@@ -6,7 +6,7 @@ const LetsConnect: React.FC = () => {
   return (
         <>
 
-            <div className="lets-connect">
+            <div className="lets-connect" id="contact">
                 
                 <div className="lets-connect-container">
                     <p className="lets-connect-title">

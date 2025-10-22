@@ -8,6 +8,10 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* AboutMe.tsx */
 .about {
@@ -42,6 +46,7 @@ html, body {
   height: 500px;         /* Set fixed frame height */
   overflow: hidden;      /* ✅ hides overflow so image stays within frame */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional aesthetic */
+  border-radius: 10px;
 }
 
 
@@ -66,7 +71,7 @@ html, body {
 }
 
 .summary {
-    background-color: #6d28d9;
+    background-color: #7f4a27;
     color: white;
     display: flex;
     align-items: center;
@@ -79,10 +84,10 @@ html, body {
 
 .summary-p {
     font-size: 3rem;
-    line-height: 1.6;
     margin: 0;
     margin-bottom: 5px;
     font-weight: 600;
+    line-height: 1.6;
     margin-top: 5px;
     
 }
@@ -118,14 +123,14 @@ html, body {
 }
 
 .iconStyle {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     color: black;
     transition: color 0.3s;
 }
 
 .my-button {
-  background-color: #7c3aed; /* nice purple */
+  background-color: #7f4a27; /* nice purple */
   color: white;
   font-weight: 500;
   padding: 10px 20px;
@@ -196,8 +201,12 @@ html, body {
     font-size: 0.75rem; /* 12px */
     font-weight: 600;
     color: #0f172a; /* slate-900 like */
-    background: linear-gradient(180deg, rgba(167,139,250,0.12), rgba(167,139,250,0.04));
-    border: 1px solid rgba(167,139,250,0.22);
+    background: linear-gradient(
+      180deg,
+      rgba(127, 74, 39, 0.12),
+      rgba(127, 74, 39, 0.04)
+    );
+    border: 1px solid rgba(127, 74, 39, 0.22);
     padding: 6px 10px;
     margin: 2px;
     transition: transform 0.18s ease, box-shadow 0.18s ease;
@@ -227,7 +236,7 @@ html, body {
 }
 
 .sample-project-button {
-    background-color: #7c3aed; /* nice purple */
+    background-color: #7f4a27; /* nice purple */
     color: white;
     font-weight: 500;
     padding: 10px 20px;
@@ -262,11 +271,11 @@ html, body {
 }
 
 .lets-connect-title {
-    font-size: 4rem;
-    line-height: 1.6;
+    font-size: 3rem;
     margin: 0;
     margin-bottom: 5px;
     font-weight: 600;
+    line-height: 1.6;
     margin-top: 5px;
 }
 
@@ -283,7 +292,7 @@ html, body {
 }
 
 .projects-title {
-    font-size: 1.875rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #111827;
     margin-bottom: 2rem;
@@ -320,8 +329,10 @@ html, body {
     margin-bottom: 2rem;
 }
 
+
+
 .active-filter span {
-    background-color: #4f46e5;
+    background-color: #ce7c45;
     color: white;
     transform: scale(1.05);
     transition: all 0.2s ease;
@@ -355,7 +366,9 @@ html, body {
   width: 100%;
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow:
+  0 4px 6px -1px rgba(127, 74, 39, 0.25),
+  0 2px 4px -1px rgba(127, 74, 39, 0.15);
   overflow: hidden;
   border: 1px solid #f3f4f6;
   transition: all 0.3s ease;

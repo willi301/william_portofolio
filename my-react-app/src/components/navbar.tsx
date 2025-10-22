@@ -8,13 +8,17 @@ const Navbar: React.FC = () => {
   return (
         <nav className="navbar">
             
-            <Link to="/contact" className="nav-button">
+            {/* <Link to="#contact" className="nav-button">
                 Contact
-            </Link>
+            </Link> */}
 
-            <Link to="/projects" className="nav-button">
+            <a href="#contact" className="nav-button">
+                Contact
+            </a>
+
+            <a href="#project" className="nav-button">
                 Projects
-            </Link>
+            </a>
 
             <Link to="/" className="nav-button">
                 Home
