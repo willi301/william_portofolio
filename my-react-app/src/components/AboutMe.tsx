@@ -30,10 +30,13 @@ const AboutMe: React.FC = () => {
                 </div>
 
                 <div className="summary">
-                    <p className="summary-p">About Me</p>
-                    <p className="summary-text">
-                        I’m a Computer Science graduate from San Francisco State University who’s passionate about problem solving and continuous learning. I see every new project as a chance to learn something new — whether it’s exploring a new framework or optimizing backend performance. I bring this mindset to building full-stack applications with React, Next.js, Node/Express, and Flask.
-                    </p>
+                    <div className="summary-box">
+                        <p className="summary-p">About Me</p>
+                        <p className="summary-text">
+                            I’m a Computer Science graduate from San Francisco State University who’s passionate about problem solving and continuous learning. I see every new project as a chance to learn something new — whether it’s exploring a new framework or optimizing backend performance. I bring this mindset to building full-stack applications with React, Next.js, Node/Express, and Flask.
+                        </p>
+                    </div>
+                    
                 </div>
 
                 {/* <SampleProject /> */}
